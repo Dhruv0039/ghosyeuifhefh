@@ -1,7 +1,7 @@
 services:
   app:
-    container_name: dhruvmirror1-mltb
+    container_name: dhruvmirror2-mltb
     build: .
     restart: on-failure
     ports:
-      - "8001:80"
+      - "8002:80"
