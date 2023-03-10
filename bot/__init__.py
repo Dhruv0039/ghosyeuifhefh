@@ -318,9 +318,25 @@ if any([ZIP_UNZIP_LIMIT, TORRENT_LIMIT, STORAGE_THRESHOLD, LEECH_LIMIT, MEGA_LIM
 else:
     CHECK_FILE_SIZE = False
 
-CRYPT = environ.get('CRYPT', '')
-if len(CRYPT) == 0:
-    CRYPT = ''
+GDTOT_CRYPT = environ.get('GDTOT_CRYPT', '')
+if len(GDTOT_CRYPT) == 0:
+    GDTOT_CRYPT = ''
+
+HUBDRIVE_CRYPT = environ.get('HUBDRIVE_CRYPT', '')
+if len(HUBDRIVE_CRYPT) == 0:
+    HUBDRIVE_CRYPT = ''
+
+KATDRIVE_CRYPT = environ.get('KATDRIVE_CRYPT', '')
+if len(KATDRIVE_CRYPT) == 0:
+    KATDRIVE_CRYPT = ''
+    
+KOLOP_CRYPT = environ.get('KOLOP_CRYPT', '')
+if len(KOLOP_CRYPT) == 0:
+    KOLOP_CRYPT = ''
+
+DRIVEFIRE_CRYPT = environ.get('DRIVEFIRE_CRYPT', '')
+if len(DRIVEFIRE_CRYPT) == 0:
+    DRIVEFIRE_CRYPT = ''
 
 BOT_PM = environ.get('BOT_PM', '')	
 BOT_PM = BOT_PM.lower() == 'true'	    
